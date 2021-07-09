@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_new_post"
+        android:title="Scrie o postare"
+        android:icon="@drawable/post"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profilul Meu"
+        android:icon="@drawable/user"/>
+
+    <item
+        android:id="@+id/nav_find_friends"
+        android:title="Caută colegi"
+        android:icon="@drawable/search_friends"/>
+    <item
+        android:id="@+id/nav_messages"
+        android:title="Mesaje"
+        android:icon="@drawable/chat"
+        />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Setari"
+        android:icon="@drawable/settings"
+        />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Iesire cont"
+        android:icon="@drawable/signout"/>
+</menu>

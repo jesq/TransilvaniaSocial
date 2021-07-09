@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".menu.SearchStudentsActivity">
+
+    <include
+        android:id="@+id/find_friends_activity_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_friends_activity_toolbar"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_search_friends"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Caută prieteni..."
+            android:textSize="20sp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:background="@drawable/input_fields"
+            android:inputType="text"/>
+
+        <ImageButton
+            android:id="@+id/ib_search_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_friends"
+            android:background="?colorSecondary"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/et_search_friends"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_find_friends"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

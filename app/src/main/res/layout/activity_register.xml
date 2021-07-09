@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".authentication.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/et_register_email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:ems="20"
+            android:hint="Adresă de e-mail"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_fields"
+            android:drawableLeft="@drawable/mail"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/et_register_pw"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@+id/et_register_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="15"
+            android:hint="Parolă"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/input_fields"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/lock"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/et_register_confirm_pw"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_register_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="15"
+            android:hint="Confirmă parola"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:background="@drawable/input_fields"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/verified_lock"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/et_register_confirm_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Crează cont"
+            android:background="@drawable/button_shape"
+            android:padding="15dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

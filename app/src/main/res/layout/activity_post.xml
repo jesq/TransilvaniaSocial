@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".posts.PostActivity">
+
+    <include
+        android:id="@+id/new_post_activity_toolbar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <Button
+        android:id="@+id/btn_make_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:background="?colorPrimary"
+        android:text="POSTEAZĂ"
+        android:textColor="#FF9933"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="100dp"
+        android:background="?colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/btn_make_post"
+        android:src="@drawable/add_image" />
+
+    <ImageView
+        android:id="@+id/iv_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_post_activity_toolbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_post_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_new_post"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Scrieți aici..."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/input_fields"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:padding="15dp"/>
+
+</RelativeLayout>

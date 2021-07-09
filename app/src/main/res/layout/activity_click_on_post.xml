@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".posts.ClickOnPostActivity">
+
+    <TextView
+        android:id="@+id/tv_clickOnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Descriere.."
+        />
+
+    <ImageView
+        android:id="@+id/iv_clickOnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_clickOnPost"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_clickOnPost_edit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_clickOnPost_delete"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="20dp"
+        android:text="Editeaza"
+        />
+
+    <Button
+        android:id="@+id/btn_clickOnPost_delete"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Sterge"/>
+
+</RelativeLayout>

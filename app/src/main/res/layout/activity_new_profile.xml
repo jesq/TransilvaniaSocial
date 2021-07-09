@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".authentication.NewProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_newProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/placeholderprofile"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/civ_newProfile">
+
+        <EditText
+            android:id="@+id/et_newProfile_lastName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:ems="20"
+            android:gravity="start|top"
+            android:hint="Nume"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPersonName|textCapWords"
+            android:background="@drawable/input_fields"
+            android:drawableLeft="@drawable/nametag"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:padding="15dp"
+            android:maxLength="30"/>
+
+        <EditText
+            android:id="@+id/et_newProfile_firstName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_newProfile_lastName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="20"
+            android:gravity="start|top"
+            android:hint="Prenume"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPersonName|textCapWords"
+            android:background="@drawable/input_fields"
+            android:drawableLeft="@drawable/nametag"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/white"
+            android:padding="15dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_newProfile_Faculty"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_newProfile_firstName"
+            android:background="@drawable/input_fields"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_save_info"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_newProfile_Faculty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="Salvează"
+            android:background="@drawable/button_shape"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

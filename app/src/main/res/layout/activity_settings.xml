@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorSecondary"
+    tools:context=".menu.SettingsActivity">
+
+    <include android:id="@+id/settings_activity_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_settings_profile"
+        android:layout_below="@id/settings_activity_toolbar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/placeholderprofile" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civ_settings_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/et_settings_status"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_fields"
+            android:hint="Status"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLength="30"/>
+
+        <EditText
+            android:id="@+id/et_settings_birthday"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_settings_status"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/input_fields"
+            android:hint="Data de naștere"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/sp_settings_gender"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/et_settings_birthday"
+            android:background="@drawable/input_fields"
+            />
+
+
+        <Button
+            android:id="@+id/btn_settings_save"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp_settings_gender"
+            android:layout_marginTop="30dp"
+            android:text="Actualizeaza datele profilului"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_shape"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoginActivity"
+    android:background="?colorSecondary">
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_ut"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/suez_one"
+        android:layout_below="@+id/iv_login_logo"
+        android:text="Transilvania Social"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="393dp"
+        android:ems="15"
+        android:hint=" @student.unitbv.ro"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_fields"
+        android:drawableLeft="@drawable/mail"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_login_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Parolă"
+        android:background="@drawable/input_fields"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawableTint="@color/white"
+        android:drawablePadding="5dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/et_login_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Autentificare"
+        android:background="@drawable/button_shape" />
+
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Nu ai un cont? Înregistrează-te!"
+        android:textColor="#C0C0C0"/>
+
+    <TextView
+        android:id="@+id/tv_login_forgot_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Ți-ai uitat parola?"
+        android:textColor="#C0C0C0"/>
+</RelativeLayout>
